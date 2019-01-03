@@ -10,14 +10,6 @@
 
     <title>Siri Khalsa - Portfolio</title>
 
-    <!-- p5 javascript to add Processing-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
-    <script src="./js/WaterDrop.js"></script>
-    <script src="./js/Drop.js"></script>
-    <script src="./js/Drip.js"></script>
-    <script src="./js/Splash.js"></script>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -91,14 +83,13 @@
 
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div id="test" class="col-xl-8 col-lg-7 text-center">
-            <!-- <img class="img-fluid mb-3 mb-lg-0" src="img/WaterDrop.gif" alt=""> -->
-
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
-              <h4>Particle Emitter - WaterDrop</h4>
-              <p class="text-black-50 mb-0">This program is an original idea... at least I think it is anyway. It is very possible someone else has made the same exact application. This is super cool! it is also super old. As I write up my portfolio I realize the code could use some improvements. If you are reading this, than I have yet to improve it. It probably shouldnt be the headliner on my portfolio! Ha ha :]</p>
+              <h4>Shoreline</h4>
+              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
             </div>
           </div>
         </div>
@@ -106,14 +97,14 @@
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid w-100" src="img/NFrostN-example.jpg" alt="Picture of NFrostN algorithm">
+            <img class="img-fluid" src="img/NFrostN-example.jpg" alt="Picture of NFrostN algorithm">
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">NFrostN</h4>
-                  <p class="mb-0 text-white-50">NFrostN is a particle diffusion algorithm. the logic of the particle diffusion generates an output picture that looks liek frost on a windshield. This project was made for Dr. Ackley's class at UNM. This is not an orignal idea of mine, but the code is all mine.</p>
+                  <h4 class="text-white">Misty</h4>
+                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>

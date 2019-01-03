@@ -302,3 +302,7 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+.test{
+  margin: 0 auto 0 auto;
+}
