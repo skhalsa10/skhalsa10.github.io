@@ -5,10 +5,13 @@ var cnv;
 var canvasDiv;
 
 function setup() {
+
+  //set up to fit in HTML DIV how come it only works when I have an ID of test
   canvasDiv = createDiv();
-  canvasDiv.parent("test");
   canvasDiv.id("waterCanvas");
   canvasDiv.addClass("img-fluid mb-3 mb-lg-0");
+  canvasDiv.parent("waterCanvasDiv");
+
   cnv = createCanvas(canvasDiv.size().width, 400);
   cnv.parent("waterCanvas");
   //initialize array
