@@ -1,16 +1,20 @@
 var ledge = [];
-const SCALE = 4;
+const SCALE = 6;
 
-var canvas;
-
+var cnv;
+var canvasDiv;
 
 function setup() {
 
+  //set up to fit in HTML DIV how come it only works when I have an ID of test
+  canvasDiv = createDiv();
+  canvasDiv.id("waterCanvas");
+  canvasDiv.addClass("img-fluid mb-3 mb-lg-0");
+  canvasDiv.parent("waterCanvasDiv");
 
-  canvas = createCanvas(select('header').size().width, select('header').size().height);
-  canvas.parent('water-canvas-div');
-  canvas.id('water');
-
+  cnv = createCanvas(canvasDiv.size().width, 400);
+  cnv.parent("waterCanvas");
+  cnv.style('z-index', '-1');
   //initialize array
   for(var i = 0; i<width/(8*SCALE);i++){
     ledge[i] = new Drop((i*8*SCALE)+((width%(8*SCALE))/2), SCALE);
@@ -37,19 +41,9 @@ function draw() {
   update();
 }
 
- function windowResized() {
-   resizeCanvas(select('header').size().width, select('header').size().height);
-
-   ledge.length = int(width/(8*SCALE));
-   for(var i = 0; i< ledge.length;i++){
-     if(ledge[i] == null){
-       ledge[i] = new Drop((i*8*SCALE)+((width%(8*SCALE))/2), SCALE);
-     }else if(ledge[i] instanceof Drop && ledge[i].waterState>1){
-       ledge[i] = new Drip(ledge[i].getX()+ (8*SCALE)/2, SCALE);
-     }
-   }
-
- }
+function windowResized() {
+  resizeCanvas(canvasDiv.size().width, 400);
+}
 
 function update(){
   var s = ledge.length;

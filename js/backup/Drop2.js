@@ -23,8 +23,6 @@ class Drop {
             return this.x;
         };
 
-        
-
         //set fill
         this.setFill = function () {
             if (!mouseIsPressed) {
@@ -74,3 +72,4 @@ class Drop {
         };
     }
 }
+
