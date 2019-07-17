@@ -1,5 +1,5 @@
 var ledge = [];
-const SCALE = 4;
+const SCALE = 3;
 
 var canvas;
 
