@@ -1,194 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131910282-1"></script>
-    <script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131910282-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-131910282-1');
-    </script>
+  </script>
 
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Siri Khalsa - Portfolio</title>
+  <title>Siri Khalsa - Portfolio</title>
 
-    <!-- p5 javascript to add Processing-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+  <!-- p5 javascript to add Processing-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 
-    <!-- My javascript version of my original stuff-->
-    <script src="./js/WaterDrop.js"></script>
-    <script src="./js/Drop.js"></script>
-    <script src="./js/Drip.js"></script>
-    <script src="./js/Splash.js"></script>
+  <!-- My javascript version of my original stuff-->
+  <script src="./js/WaterDrop.js"></script>
+  <script src="./js/Drop.js"></script>
+  <script src="./js/Drip.js"></script>
+  <script src="./js/Splash.js"></script>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <link href="css/myStyles.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/myStyles.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style='height: 100%; width: 50%; object-fit: contain' src="img/test.gif" alt=""></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-            </li>
-          </ul>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style='height: 100%; width: 50%; object-fit: contain' src="img/test.gif" alt=""></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div id='water-canvas-div' class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Siri Khalsa</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Welcome to my coding portfolio.</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">A note from me. :]</h2>
+          <p class="text-white-50">Welcome to my page. Not sure what it will evolve into,
+            but as of now, it is attempting to be a portfolio of some coding projects I am working on.
+            It may turn out to also include school projects. It may just include random ideas I have about
+            about the world. Feel free to explore the website and see what it means for you. My goal is to have some
+            sort of structure, but I am not forcing a specific structure and prefer to let the website evolve as I evolve.
+            I want to link this website to a blog as well. This site will highlight more project type coding. Anything here will link to
+            the more detailed page on the blog.
+          </p>
         </div>
       </div>
-    </nav>
+      <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
+    </div>
+  </section>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div id='water-canvas-div' class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Siri Khalsa</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Welcome to my coding portfolio.</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div id='water-canvas-div2' class="col-xl-8 col-lg-7 text-center">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/waterDrop.gif" alt="">
+
         </div>
-      </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">A note from me. :]</h2>
-            <p class="text-white-50">Welcome to my page. Not sure what it will evolve into,
-              but as of now, it is attempting to be a portfolio of some coding projects I am working on.
-              It may turn out to also include school projects. It may just include random ideas I have about
-              about the world. Feel free to explore the website and see what it means for you. My goal is to have some
-              sort of structure, but I am not forcing a specific structure and prefer to let the website evolve as I evolve.
-              I want to link this website to a blog as well. This site will highlight more project type coding. Anything here will link to
-               the more detailed page on the blog.
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Particle Emitter - WaterDrop</h4>
+            <p class="text-black-50 mb-0">This program is an original idea... at least I think it is anyway. It is very possible someone else has made the same exact application. This is super cool! I just got done getting it set up on github <a
+                href="https://github.com/skhalsa10/WaterDropJS">HERE.</a> You can also view my thinking process behind how I made it on this
+              <a href="https://medium.com/@siri.khalsa.505/water-drop-animation-first-time-using-javascript-36d9d403d114">Medium article</a> I wrote.
             </p>
           </div>
         </div>
-        <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
       </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
-      <div class="container">
-
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div id='water-canvas-div2' class="col-xl-8 col-lg-7 text-center">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/waterDrop.gif" alt="">
-
-          </div>
-
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Particle Emitter - WaterDrop</h4>
-              <p class="text-black-50 mb-0">This program is an original idea... at least I think it is anyway. It is very possible someone else has made the same exact application. This is super cool! I just got done getting it set up on github <a href="https://github.com/skhalsa10/WaterDropJS">HERE.</a> You can also view my thinking process behind how I made it on this
-                <a href="https://medium.com/@siri.khalsa.505/water-drop-animation-first-time-using-javascript-36d9d403d114">Medium article</a> I wrote.
-              </p>
-            </div>
-          </div>
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid w-100" src="img/NFrostN-example.jpg" alt="Picture of NFrostN algorithm">
         </div>
-
-        <!-- Project One Row -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid w-100" src="img/NFrostN-example.jpg" alt="Picture of NFrostN algorithm">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">NFrostN</h4>
-                  <p class="mb-0 text-white-50">NFrostN is a particle diffusion algorithm. the logic of the particle diffusion generates an output picture that looks liek frost on a windshield. This project was made for Dr. Ackley's class at UNM. This is not an orignal idea of mine, but the code is all mine.</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">NFrostN</h4>
+                <p class="mb-0 text-white-50">NFrostN is a particle diffusion algorithm. the logic of the particle diffusion generates an output picture that looks liek frost on a windshield. This project was made for Dr. Ackley's class at UNM. This
+                  is not an orignal idea of mine, but the code is all mine.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/PicoMan.gif" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">PicoMan</h4>
-                  <p class="mb-0 text-white-50">
-                    Here is another project that came out of Dr. Ackley's class. His class was the best class I have had
-                    in my school experience. I am humbled I get to take a class with him as he normally only taught upper level courses.
-                    Please read the project landing page for more information on how this works. The framework for this project can
-                    be used to create many projects.
-                  </p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/PicoMan.gif" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">PicoMan</h4>
+                <p class="mb-0 text-white-50">
+                  Here is another project that came out of Dr. Ackley's class. His class was the best class I have had
+                  in my school experience. I am humbled I get to take a class with him as he normally only taught upper level courses.
+                  Please read the project landing page for more information on how this works. The framework for this project can
+                  be used to create many projects.
+                </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </section>
 
-    <!-- Signup Section
-    <section id="signup" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
+    </div>
+  </section>
 
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
 
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Do you want to reach out to me? Send me an email and I will reach out to you.</h2>
 
-          </div>
+          <form class="form" action="https://formcarry.com/s/oKEKbXsXghq" method="POST" accept-charset="UTF-8">
+
+            <div class="form-row mt-3">
+              <div class="col">
+                <input type="text" class="form-control form-control-lg" placeholder="First name" name="first">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg" placeholder="Last name" name="last">
+              </div>
+            </div>
+
+            <div class="form-row my-3">
+              <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Enter email address..." name="email">
+            </div>
+            <div class="form-row my-3">
+            <textarea class="form-control form-control-lg"  rows="5" name="message" placeholder="Enter your message here."></textarea>
+            </div>
+            <div class="form-row">
+              <input type="hidden" name="_gotcha">
+              <button type="submit" name="submit" class="btn btn-primary mx-auto">Send</button>
+            </div>
+          </form>
+
         </div>
       </div>
-    </section> -->
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="signup" class="contact-section bg-black">
-      <div class="container">
+  <!-- Contact Section -->
+  <section id="signup" class="contact-section bg-black">
+    <div class="container">
 
-        <!--
+      <!--
         <div class="row justify-content-center no-gutters" >
 
           <div class="col-md-4 mb-3 mb-md-0">
@@ -202,7 +225,7 @@
             </div>
           </div>-->
 
-          <!--
+      <!--
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
@@ -218,7 +241,7 @@
           -->
 
 
-         <!--<div class="col-md-4 mb-3 mb-md-0">
+      <!--<div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
@@ -228,35 +251,35 @@
               </div>
             </div>
           </div>
-        </div>
-        -->
+        </div>-->
 
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
 
+      <div class="social d-flex justify-content-center">
+        <a href="https://github.com/skhalsa10/" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; Siri Khalsa 2019
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Siri Khalsa 2019
+    </div>
+  </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  </body>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
 
 </html>
