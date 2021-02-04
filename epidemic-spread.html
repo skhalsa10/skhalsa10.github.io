@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131910282-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131910282-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Siri Khalsa's Portfolio</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <link rel="stylesheet" href="styles/custom.css">
+  <link rel="stylesheet" href="css/mystyles.css">
+
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <!-- Navigation bar -->
+  <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="images/test.svg" width="50px" height="50px">
+        </a>
+
+        <a role="button" id="burger" class="navbar-burger burger has-text-light " aria-label="menu" aria-expanded="false" data-target="navbar-menu-links">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar-menu-links" class="navbar-menu ">
+        <div class="navbar-end">
+          <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-light" href="index.html">
+            About
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link is-arrowless is-family-secondary has-text-weight-medium is-size-4 has-text-light is-active">
+              Projects
+            </a>
+
+            <div class="navbar-dropdown is-right">
+              <a href="waterdrop.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                Water Drop Animation
+              </a>
+              <a href="simpleworld.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                A Simple World
+              </a>
+              <!-- <a href="nfrostn.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                NFrostN
+              </a> -->
+              <a href="covid.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                Covid-19 Screening ABM
+              </a>
+              <a href="epidemic-spread.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light is-active">
+                Epidemic Spread & Evolution
+              </a>
+              <a href="cgc.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                Cretaceous Gardens Controller
+              </a>
+              <a href="auction-house.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                Auction House
+              </a>
+              <a href="mobile-agents.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                Mobile Agents
+              </a>
+              <a href="scrabble.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                Scrabble
+              </a>
+              <!-- <a href="picoman.html" class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-light">
+                PicoMan
+              </a> -->
+            </div>
+
+          </div>
+
+          <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-light">
+                            Algorithms
+                        </a> -->
+
+          <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-light" href="blog.html">
+            Blog
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Video of project -->
+  <section class="section mt-5">
+    <div class="container ">
+      <figure class="image is-16by9">
+        <video class="has-ratio" id="covid-video" width="100%" height="100%" muted="" loop="" autoplay="" controls="">
+          <source src="videos/epidemic-spread/epidemic-spread.webm" type="video/webm">
+          <source src="videos/epidemic-spread/epidemic-spread.mp4" type="video/mp4">
+          <!-- <img class="img-fluid w-100" src="img/NFrostN.gif" alt="Picture of NFrostN algorithm"> -->
+          Your browser can not display the video I made.... what a bummer!
+        </video>
+      </figure>
+    </div>
+  </section>
+
+  <!-- here we have links to research pdf as well as a link to the github repo -->
+  <section class="section my-0 py-0">
+    <div class="container">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-two-fifths"></div>
+
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column">
+
+          <a class="has-text-dark" href="https://github.com/skhalsa10/epidemic-spread" target="_blank">
+            <div class="box has-background-grey-lighter">
+              <i class="fab fa-github fa-2x"></i>
+            </div>
+          </a>
+
+        </div>
+        <div class="column">
+
+          <a class="has-text-dark" href="pdf/epidemic-spread.pdf" download="epidemic-spread.pdf" target="_blank">
+            <div class="box has-background-grey-lighter">
+              <i class="fas fa-file-pdf fa-2x"></i>
+            </div>
+          </a>
+
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column is-two-fifths"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- here we have the written content -->
+  <section class="section">
+    <div class="container">
+      <!-- <div class="box has-background-grey-lighter"> -->
+      <div class="content is-large">
+        <p class="title is-2 has-text-dark is-family-secondary has-text-centered has-text-left-mobile">
+          Covid-19 Spread and Evolution
+        </p>
+        <p class="subtitle  has-text-dark is-family-secondary has-text-centered has-text-left-mobile is-spaced">
+          Language: Python
+        </p>
+        <p class="title is-3 has-text-dark is-family-secondary">
+          Overview
+        </p>
+        <p class="has-text-dark">
+          This project was born out of my complex adaptive system class. In this research paper, we explore epidemic spread. The first part of the article is about the neutral network and how a virus can traverse this network with relative ease. It
+          will eventually lead to a novel virus. The virus' can mutate very quickly. As it replicates, it mutates and traverses this network. This mutation rate is how they respond and survive to their natural predator, the immune system. Eventually,
+          this network exploration leads to a NEW novel virus. This part of the paper explores the math it would take for SARS-COV-2 to mutate back into the original SARS.
+        </p>
+        <p class="has-text-dark">
+          The second part of this paper explores epidemic spread using a cellular automata model. The video featured on this page shows every version of this model. The first version showcases a particular set of instructions or dynamics that a cell
+          will follow. For example, a cell will consider its neighbors, and based on their state, it will change states. This leads to a very predictable and non-natural outcome with different colored squares representing infected and recovered
+          cells. It will converge to the same pattern every time.
+        </p>
+        <p class="has-text-dark">
+          The second version of the model will showcase the epidemic spread of a virus based on probabilistic dynamics. Instead of always changing the state if the neighbors are of a specific state, It will change states with different probabilities
+          based on the neighbors. This change leads to a more natural and realistic epidemic spread model.
+        </p>
+        <p class="has-text-dark">
+          The third model introduces two different viruses' fighting to spread and survive and take over as many hosts as possible. As the video shows, the orange virus has dynamics that allow it to spread faster. It would eventually take over the
+          entire model and starve the red virus.
+        </p>
+        <p class="has-text-dark">
+          The fourth and final model determines the dynamics probability rules by taking the 3rd model's dynamics and running a genetic algorithm so that both viruses' can coexist and survive together. As we can see, they have entirely different
+          rules for how they spread, but both can coexist together in the world. They equally consume cells.
+        </p>
+        <p class="has-text-dark">
+          I have included links to the Github Repo and the PDF of the research paper that I wrote with Anas Gauba. Hope you enjoy!
+        </p>
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+
+
+  <script src="javascript/navbar.js"></script>
+
+</body>
+
+</html>

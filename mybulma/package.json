@@ -1,0 +1,25 @@
+{
+  "name": "mybulma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../sass/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url ../sass/mystyles.scss ../css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skhalsa10/New-Website.git"
+  },
+  "author": "Siri Khalsa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skhalsa10/New-Website/issues"
+  },
+  "homepage": "https://github.com/skhalsa10/New-Website#readme",
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "node-sass": "^5.0.0"
+  }
+}
