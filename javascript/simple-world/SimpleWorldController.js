@@ -7,13 +7,18 @@ let originalWidth;
 let originalHeight;
 let newWidth;
 let newHeight;
+let initCanvasWidth;
+let initCanvasHeight;
 
 function setup() {
-  originalWidth = select('#simpleworld-canvas-fig').size().width;
-  originalHeight = select('#simpleworld-canvas-fig').size().height;
-  newWidth = select('#simpleworld-canvas-fig').size().width;
-  newHeight = select('#simpleworld-canvas-fig').size().height;
-  canvas = createCanvas(originalWidth, originalHeight );
+  initCanvasWidth = select('#simpleworld-canvas-fig').size().width;
+  initCanvasHeight = select('#simpleworld-canvas-fig').size().height;
+  originalWidth = 1344;
+  originalHeight = 756;
+
+  newWidth = initCanvasWidth;
+  newHeight = initCanvasHeight;
+  canvas = createCanvas(initCanvasWidth, initCanvasHeight);
   canvas.parent('#simpleworld-canvas-div');
   canvas.id('simpleworld');
 
@@ -37,11 +42,11 @@ function setup() {
 
 
 function draw() {
-  scale((newWidth/originalWidth),(newHeight/originalHeight));
+  scale((newWidth / originalWidth), (newHeight / originalHeight));
 
-  if(mouseIsPressed){
-    background(77);
-  }else {
+  if (mouseIsPressed) {
+    background(94);
+  } else {
     background('#423D3D');
   }
   if (world !== null) {
@@ -63,8 +68,8 @@ function windowResized() {
   newWidth = select('#simpleworld-canvas-fig').size().width;
   newHeight = select('#simpleworld-canvas-fig').size().height;
 
-  print("(newWidth/originalWidth) = " + (newWidth/originalWidth));
-  print("(newHeight/originalHeight) = " + (newHeight/originalHeight));
+  print("(newWidth/originalWidth) = " + (newWidth / originalWidth));
+  print("(newHeight/originalHeight) = " + (newHeight / originalHeight));
   resizeCanvas(newWidth, newHeight);
 
 

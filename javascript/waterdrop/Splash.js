@@ -23,7 +23,7 @@ class Splash {
         //set fill
         this.setFill = function () {
             if (!mouseIsPressed) {
-                fill('#FDE1C8');
+                fill('#ff9955');
             }
             else {
                 fill('#423D3D');
