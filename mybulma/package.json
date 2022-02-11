@@ -20,6 +20,6 @@
   "homepage": "https://github.com/skhalsa10/New-Website#readme",
   "devDependencies": {
     "bulma": "^0.9.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.0"
   }
 }
