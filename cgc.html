@@ -1,279 +1,357 @@
 <!DOCTYPE html>
 <html data-theme="dark">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PJ87EFWV7Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ87EFWV7Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-PJ87EFWV7Q");
+    </script>
 
-    gtag('config', 'G-PJ87EFWV7Q');
-  </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siri Khalsa's Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <!-- <link rel="stylesheet" href="styles/custom.css"> -->
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Siri Khalsa's Portfolio</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-  <!-- <link rel="stylesheet" href="styles/custom.css"> -->
-  <link rel="stylesheet" href="css/mystyles.css">
-
-</head>
-
-<body class="has-navbar-fixed-top">
-
-  <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <embed src="images/logo.svg" width="40" height="40" type="image/svg+xml">
-        </a>
-
-        <a role="button" id="burger" class="navbar-burger as-background-dark burger has-text-primary" aria-label="menu"
-          aria-expanded="false" data-target="navbar-menu-links">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbar-menu-links" class="navbar-menu ">
-        <div class="navbar-end">
-          <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
-            href="index.html">
-            About
+  <body class="has-navbar-fixed-top">
+    <nav
+      class="navbar is-spaced is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <embed
+              src="images/logo.svg"
+              width="40"
+              height="40"
+              type="image/svg+xml"
+            />
           </a>
 
-          <div class="navbar-item has-dropdown is-hoverable ">
+          <a
+            role="button"
+            id="burger"
+            class="navbar-burger as-background-dark burger has-text-primary"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbar-menu-links"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbar-menu-links" class="navbar-menu">
+          <div class="navbar-end">
             <a
-              class="navbar-link is-arrowless is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-black-ter">
-              Projects
+              class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
+              href="index.html"
+            >
+              About
             </a>
 
-            <div class="navbar-dropdown has-background-dark is-right">
-              <a href="waterdrop.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Water Drop Animation
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link is-arrowless is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-black-ter"
+              >
+                Projects
               </a>
-              <a href="simpleworld.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                A Simple World
-              </a>
-              <a href="covid.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Covid-19 Screening ABM
-              </a>
-              <a href="epidemic-spread.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Epidemic Spread & Evolution
-              </a>
-              <a href="cgc.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-black-ter">
-                Cretaceous Gardens Controller
-              </a>
-              <a href="auction-house.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Auction House
-              </a>
-              <a href="mobile-agents.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Mobile Agents
-              </a>
-              <a href="scrabble.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Scrabble
-              </a>
+
+              <div class="navbar-dropdown has-background-dark is-right">
+                <a
+                  href="waterdrop.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Water Drop Animation
+                </a>
+                <a
+                  href="simpleworld.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  A Simple World
+                </a>
+                <a
+                  href="base-10-conversion.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Base 10 Conversion
+                </a>
+                <a
+                  href="covid.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Covid-19 Screening ABM
+                </a>
+                <a
+                  href="epidemic-spread.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Epidemic Spread & Evolution
+                </a>
+                <a
+                  href="cgc.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-black-ter"
+                >
+                  Cretaceous Gardens Controller
+                </a>
+                <a
+                  href="auction-house.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Auction House
+                </a>
+                <a
+                  href="mobile-agents.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Mobile Agents
+                </a>
+                <a
+                  href="scrabble.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Scrabble
+                </a>
+              </div>
             </div>
 
-          </div>
-
-          <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary">
+            <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary">
                             Algorithms
                         </a> -->
 
-          <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
-            href="blog.html">
-            Blog
-          </a>
-
+            <a
+              class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
+              href="blog.html"
+            >
+              Blog
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="section mt-5">
-    <div class="container ">
-      <figure class="image is-16by9">
-        <iframe class="has-ratio"
-          src="https://player.vimeo.com/video/508703170?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          title="CGC"></iframe>
-      </figure>
-
-    </div>
-  </section>
-
-  <!-- section with links to github and different pdf downloads -->
-  <section class="section mt-0 pt-0">
-    <div class="container">
-      <div class="columns is-mobile is-centered">
-
-        <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
-
-
-        <div class="column ">
-
-          <a class="has-text-dark" href="https://github.com/skhalsa10/cgc" target="_blank">
-            <div class="box has-background-dark">
-              <i class="center fab fa-github fa-2x"></i>
-            </div>
-          </a>
-        </div>
-        <div class="column">
-
-          <a class="has-text-dark" href="pdf/cgc/T03-RDD-V3.pdf" download="RDD.pdf" target="_blank">
-            <div class="box has-background-dark pb-2">
-              <i class="fas fa-file-pdf fa-2x"></i>
-              <p class="mt-2">RDD</p>
-            </div>
-          </a>
-        </div>
-        <div class="column">
-
-          <a class="has-text-dark" href="pdf/cgc/T03-SRS-V2.pdf" download="SRS.pdf" target="_blank">
-            <div class="box has-background-dark pb-2">
-              <i class="fas fa-file-pdf fa-2x"></i>
-              <p class="mt-2">SRS</p>
-            </div>
-          </a>
-        </div>
-        <div class="column">
-
-          <a class="has-text-dark" href="pdf/cgc/T03-SAD-V4.pdf" download="SAD.pdf" target="_blank">
-            <div class="box has-background-dark pb-2">
-              <i class="fas fa-file-pdf fa-2x"></i>
-              <p class="mt-2">SAD</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
+    <section class="section mt-5">
+      <div class="container">
+        <figure class="image is-16by9">
+          <iframe
+            class="has-ratio"
+            src="https://player.vimeo.com/video/508703170?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="CGC"
+          ></iframe>
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- written content about the CGC -->
-  <section class="section has-background-white has-text-dark">
-    <div class="container">
-      <div class="content is-large">
-        <p class="title is-2 has-text-dark is-family-secondary has-text-centered has-text-left-mobile">
-          Cretaceous Gardens Controller
-        </p>
-        <p class="subtitle has-text-dark is-family-secondary has-text-centered has-text-left-mobile is-spaced">
-          Language: Java
-        </p>
-        <p class="title is-3 has-text-dark is-family-secondary">
-          Introduction
-        </p>
-        <p class="has-text-dark">
-          Jurassic Park inspires the Cretaceous Gardens Controller(CGC) system/application. I am incredibly proud of
-          this project. Out of all the school projects I needed to code, this took the MOST work. It was for a Software
-          Development course at
-          UNM. The class taught me a lot. Up to this point during my school career, I had made some pretty big projects,
-          but these projects were pre-designed. I was building something based on a spec sheet. This project was very
-          different. This
-          course was all about building software from beginning to end, which included mostly design. We were given an
-          overall idea, and we needed to design a solution and then implement the solution. This project required a
-          group of five people to
-          work together. This requirement added additional complexities to the project that I believe has been a
-          necessary experience for me to grow. The idea was to build an entire system to control the Cretaceous Gardens.
-        </p>
-        <p class="title is-3 has-text-dark is-family-secondary">
-          Design Documents
-        </p>
-        <p class="has-text-dark">
-          We began our journey building this program by writing a Technical Feasibility Study(TFS) document. In this
-          document, we take given logistical constraints provided by our "investors." For example, some constraints
-          were. The payment system is
-          all automated, and the cars are all self-driving, and they will pick up customers and bring them to the T-Rex
-          exhibit. We also identified our constraints. These include constraints like the surveillance cameras must have
-          redundant uplinks.
-          Every node in the system must have a normal and emergency mode that responds to different protocols, and all
-          Alarms must be audible in every part of the island. There must be non-audible alarms as well. This document
-          determines if the
-          project is even technically feasible.
-        </p>
-        <p class="has-text-dark">
-          The next document we built was the Requirements Definition Document (RDD). The purpose of this document was to
-          define the requirements to create the CGC. We determined several objectives we wanted our system to have.
-          These included safety,
-          positive user experience, maintainability, and efficiency. We defined every hardware and interface we would
-          need for the CGC. This includes a pay kiosk, car, and electric fence enclosure. We also defined the
-          capabilities of the system.
-          These include the emergency features, the safety features, and financial analytics.
-        </p>
-        <p class="has-text-dark">
-          The next document we made was the Software Requirements Specification(SRS). This document starts to get into
-          more details of what is needed from a lower level in the software. What are the functions of each individual
-          smaller component?
-          What data do these components receive, and what do they send? Here we are defining the methods and behaviors
-          of these pieces. The last part of this document describes different use cases and scenarios.
-        </p>
-        <p class="has-text-dark">
-          The last document we wrote was the Software Architecture Design(SAD. This document has class diagrams and the
-          implementation plan. This is document breathes life into every component from a software perspective. It shows
-          which components
-          run on their own thread, what physical hardware pieces that component controls, and how each component
-          communicates with each other and the root node, which is the CGC.
-        </p>
-        <p class="title is-3 has-text-dark is-family-secondary">
-          Software Overview
-        </p>
-        <p class="has-text-dark">
-          The final piece is to build the actual software. We followed our documents exclusively. This helped guide us
-          in a lot of our programming as we already spent a lot of time of these decisions. The application was HUGE. It
-          was one of the
-          biggest programs I have made. Since we did not have to build this for a real park, we simulated everything's
-          behavior. The video above shows what the interface would look like on a monitor system that would be used by
-          an employee to monitor
-          the park.
-        </p>
-        <p class="has-text-dark">
-          We can see at the bottom of a video the entrance to the park. There are pay station kiosks that a visitor
-          would walk up to and buy a "token." This token acts as a ticket to the park, but it also has a GPS and a
-          screen with instructions in
-          case of an emergency. The purple dots are employees walking around with unique employee-only tokens. The green
-          dots are visitors. We see them spawn from the pay kiosks as would happen with a newly purchased token.
-        </p>
-        <p class="has-text-dark">
-          When the visitors are ready to see the main attraction, they will go to a loading zone where a self-driving
-          car will pick them up and then drop them off at the T-Rex exhibit. We also see helicopter icons that are
-          constantly patrolling the
-          park for safety. The "View Health" will toggle the health that all nodes are reporting. The "View Finances"
-          button will change the GUI to showcase the current finances of the park. The last buttons will toggle the
-          emergency protocol. This
-          allows us to simulate the park's behaviors in case there is an emergency triggered for any reason.
-        </p>
-        <p class="has-text-dark">
-          This is the project. Please feel free to browse the GitHub repo if you would like to test out and run the
-          application. I have also included the PDF to each document mentioned above. The links to all of these are
-          directly under the video
-          above.
-        </p>
+    <!-- section with links to github and different pdf downloads -->
+    <section class="section mt-0 pt-0">
+      <div class="container">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
+
+          <div class="column">
+            <a
+              class="has-text-dark"
+              href="https://github.com/skhalsa10/cgc"
+              target="_blank"
+            >
+              <div class="box has-background-dark">
+                <i class="center fab fa-github fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a
+              class="has-text-dark"
+              href="pdf/cgc/T03-RDD-V3.pdf"
+              download="RDD.pdf"
+              target="_blank"
+            >
+              <div class="box has-background-dark pb-2">
+                <i class="fas fa-file-pdf fa-2x"></i>
+                <p class="mt-2">RDD</p>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a
+              class="has-text-dark"
+              href="pdf/cgc/T03-SRS-V2.pdf"
+              download="SRS.pdf"
+              target="_blank"
+            >
+              <div class="box has-background-dark pb-2">
+                <i class="fas fa-file-pdf fa-2x"></i>
+                <p class="mt-2">SRS</p>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a
+              class="has-text-dark"
+              href="pdf/cgc/T03-SAD-V4.pdf"
+              download="SAD.pdf"
+              target="_blank"
+            >
+              <div class="box has-background-dark pb-2">
+                <i class="fas fa-file-pdf fa-2x"></i>
+                <p class="mt-2">SAD</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
+        </div>
       </div>
+    </section>
 
+    <!-- written content about the CGC -->
+    <section class="section has-background-white has-text-dark">
+      <div class="container">
+        <div class="content is-large">
+          <p
+            class="title is-2 has-text-dark is-family-secondary has-text-centered has-text-left-mobile"
+          >
+            Cretaceous Gardens Controller
+          </p>
+          <p
+            class="subtitle has-text-dark is-family-secondary has-text-centered has-text-left-mobile is-spaced"
+          >
+            Language: Java
+          </p>
+          <p class="title is-3 has-text-dark is-family-secondary">
+            Introduction
+          </p>
+          <p class="has-text-dark">
+            Jurassic Park inspires the Cretaceous Gardens Controller(CGC)
+            system/application. I am incredibly proud of this project. Out of
+            all the school projects I needed to code, this took the MOST work.
+            It was for a Software Development course at UNM. The class taught me
+            a lot. Up to this point during my school career, I had made some
+            pretty big projects, but these projects were pre-designed. I was
+            building something based on a spec sheet. This project was very
+            different. This course was all about building software from
+            beginning to end, which included mostly design. We were given an
+            overall idea, and we needed to design a solution and then implement
+            the solution. This project required a group of five people to work
+            together. This requirement added additional complexities to the
+            project that I believe has been a necessary experience for me to
+            grow. The idea was to build an entire system to control the
+            Cretaceous Gardens.
+          </p>
+          <p class="title is-3 has-text-dark is-family-secondary">
+            Design Documents
+          </p>
+          <p class="has-text-dark">
+            We began our journey building this program by writing a Technical
+            Feasibility Study(TFS) document. In this document, we take given
+            logistical constraints provided by our "investors." For example,
+            some constraints were. The payment system is all automated, and the
+            cars are all self-driving, and they will pick up customers and bring
+            them to the T-Rex exhibit. We also identified our constraints. These
+            include constraints like the surveillance cameras must have
+            redundant uplinks. Every node in the system must have a normal and
+            emergency mode that responds to different protocols, and all Alarms
+            must be audible in every part of the island. There must be
+            non-audible alarms as well. This document determines if the project
+            is even technically feasible.
+          </p>
+          <p class="has-text-dark">
+            The next document we built was the Requirements Definition Document
+            (RDD). The purpose of this document was to define the requirements
+            to create the CGC. We determined several objectives we wanted our
+            system to have. These included safety, positive user experience,
+            maintainability, and efficiency. We defined every hardware and
+            interface we would need for the CGC. This includes a pay kiosk, car,
+            and electric fence enclosure. We also defined the capabilities of
+            the system. These include the emergency features, the safety
+            features, and financial analytics.
+          </p>
+          <p class="has-text-dark">
+            The next document we made was the Software Requirements
+            Specification(SRS). This document starts to get into more details of
+            what is needed from a lower level in the software. What are the
+            functions of each individual smaller component? What data do these
+            components receive, and what do they send? Here we are defining the
+            methods and behaviors of these pieces. The last part of this
+            document describes different use cases and scenarios.
+          </p>
+          <p class="has-text-dark">
+            The last document we wrote was the Software Architecture Design(SAD.
+            This document has class diagrams and the implementation plan. This
+            is document breathes life into every component from a software
+            perspective. It shows which components run on their own thread, what
+            physical hardware pieces that component controls, and how each
+            component communicates with each other and the root node, which is
+            the CGC.
+          </p>
+          <p class="title is-3 has-text-dark is-family-secondary">
+            Software Overview
+          </p>
+          <p class="has-text-dark">
+            The final piece is to build the actual software. We followed our
+            documents exclusively. This helped guide us in a lot of our
+            programming as we already spent a lot of time of these decisions.
+            The application was HUGE. It was one of the biggest programs I have
+            made. Since we did not have to build this for a real park, we
+            simulated everything's behavior. The video above shows what the
+            interface would look like on a monitor system that would be used by
+            an employee to monitor the park.
+          </p>
+          <p class="has-text-dark">
+            We can see at the bottom of a video the entrance to the park. There
+            are pay station kiosks that a visitor would walk up to and buy a
+            "token." This token acts as a ticket to the park, but it also has a
+            GPS and a screen with instructions in case of an emergency. The
+            purple dots are employees walking around with unique employee-only
+            tokens. The green dots are visitors. We see them spawn from the pay
+            kiosks as would happen with a newly purchased token.
+          </p>
+          <p class="has-text-dark">
+            When the visitors are ready to see the main attraction, they will go
+            to a loading zone where a self-driving car will pick them up and
+            then drop them off at the T-Rex exhibit. We also see helicopter
+            icons that are constantly patrolling the park for safety. The "View
+            Health" will toggle the health that all nodes are reporting. The
+            "View Finances" button will change the GUI to showcase the current
+            finances of the park. The last buttons will toggle the emergency
+            protocol. This allows us to simulate the park's behaviors in case
+            there is an emergency triggered for any reason.
+          </p>
+          <p class="has-text-dark">
+            This is the project. Please feel free to browse the GitHub repo if
+            you would like to test out and run the application. I have also
+            included the PDF to each document mentioned above. The links to all
+            of these are directly under the video above.
+          </p>
+        </div>
+      </div>
+    </section>
 
-
-    </div>
-  </section>
-
-
-  <script src="javascript/navbar.js"></script>
-
-</body>
-
+    <script src="javascript/navbar.js"></script>
+  </body>
 </html>

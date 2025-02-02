@@ -30,7 +30,6 @@
   </head>
 
   <body class="has-navbar-fixed-top">
-    <!-- Navigation bar -->
     <nav
       class="navbar is-spaced is-fixed-top"
       role="navigation"
@@ -93,7 +92,7 @@
                 </a>
                 <a
                   href="base-10-conversion.html"
-                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-black-ter"
                 >
                   Base 10 Conversion
                 </a>
@@ -105,7 +104,7 @@
                 </a>
                 <a
                   href="epidemic-spread.html"
-                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-black-ter"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
                 >
                   Epidemic Spread & Evolution
                 </a>
@@ -136,7 +135,7 @@
               </div>
             </div>
 
-            <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary">
+            <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-light">
                             Algorithms
                         </a> -->
 
@@ -151,63 +150,49 @@
       </div>
     </nav>
 
-    <!-- Video of project -->
+    <!-- the video or javascipt canvas area -->
+    <!-- <section class="section my-2 mx-0 py-5 px-0"> -->
     <section class="section mt-5">
       <div class="container">
-        <figure class="image is-16by9">
-          <iframe
-            class="has-ratio"
-            src="https://player.vimeo.com/video/508700898?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            title="epidemic spread"
-          ></iframe>
+        <figure id="base-10-conversion-fig" class="image is-16by9">
+          <div id="base-10-conversion" class="has-ratio"></div>
         </figure>
+        <div id="canvas-controls" class="container"></div>
       </div>
     </section>
 
-    <!-- here we have links to research pdf as well as a link to the github repo -->
-    <section class="section mt-0 pt-0">
-      <div class="container">
-        <div class="columns is-mobile is-centered">
-          <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
+    <!-- Here are the links to different areas to access more about the content -->
+    <!-- <section class="section mt-0 pt-0">
+    <div class="container">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
 
-          <div class="column"></div>
-          <div class="column"></div>
-          <div class="column">
-            <a
-              class="has-text-dark"
-              href="https://github.com/skhalsa10/epidemic-spread"
-              target="_blank"
-            >
-              <div class="box has-background-dark">
-                <i class="fab fa-github fa-2x"></i>
-              </div>
-            </a>
-          </div>
-          <div class="column">
-            <a
-              class="has-text-dark"
-              href="pdf/epidemic-spread.pdf"
-              download="epidemic-spread.pdf"
-              target="_blank"
-            >
-              <div class="box has-background-dark">
-                <i class="fas fa-file-pdf fa-2x"></i>
-              </div>
-            </a>
-          </div>
-          <div class="column"></div>
-          <div class="column"></div>
-          <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column">
+          <a class="has-text-dark" href="https://github.com/skhalsa10/WaterDropJS" target="_blank">
+            <div class="box has-background-dark">
+              <i class="fab fa-github fa-2x"></i>
+            </div>
+          </a>
         </div>
+        <div class="column">
+          <a class="has-text-dark"
+            href="https://siri-khalsa-505.medium.com/water-drop-animation-first-time-using-javascript-36d9d403d114?sk=e3c8133aa3fe73df1bfdb06dff75a8a8"
+            target="_blank">
+            <div class="box has-background-dark ">
+              <i class="fab fa-medium fa-2x "></i>
+            </div>
+          </a>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
       </div>
-    </section>
+    </div>
+  </section> -->
 
-    <!-- here we have the written content -->
+    <!-- This section will be the written content -->
     <section class="section has-background-white has-text-dark">
       <div class="container">
         <!-- <div class="box has-background-grey-lighter"> -->
@@ -215,60 +200,29 @@
           <p
             class="title is-2 has-text-dark is-family-secondary has-text-centered has-text-left-mobile"
           >
-            Covid-19 Spread and Evolution
+            Base 10 conversion
           </p>
           <p
             class="subtitle has-text-dark is-family-secondary has-text-centered has-text-left-mobile is-spaced"
           >
-            Language: Python
-          </p>
-          <p class="title is-3 has-text-dark is-family-secondary">Overview</p>
-          <p class="has-text-dark">
-            This project was born out of my complex adaptive system class. In
-            this research paper, we explore epidemic spread. The first part of
-            the article is about the neutral network and how a virus can
-            traverse this network with relative ease. It will eventually lead to
-            a novel virus. The virus' can mutate very quickly. As it replicates,
-            it mutates and traverses this network. This mutation rate is how
-            they respond and survive to their natural predator, the immune
-            system. Eventually, this network exploration leads to a NEW novel
-            virus. This part of the paper explores the math it would take for
-            SARS-COV-2 to mutate back into the original SARS.
+            Language: Javascript with p5.js library
           </p>
           <p class="has-text-dark">
-            The second part of this paper explores epidemic spread using a
-            cellular automata model. The video featured on this page shows every
-            version of this model. The first version showcases a particular set
-            of instructions or dynamics that a cell will follow. For example, a
-            cell will consider its neighbors, and based on their state, it will
-            change states. This leads to a very predictable and non-natural
-            outcome with different colored squares representing infected and
-            recovered cells. It will converge to the same pattern every time.
+            This is a simple program that animates the algorithm to convert a
+            base 10 number into any other number. This program uses the
+            technique of successive division to convert from a base 10 number
+            into a chosen base.
           </p>
           <p class="has-text-dark">
-            The second version of the model will showcase the epidemic spread of
-            a virus based on probabilistic dynamics. Instead of always changing
-            the state if the neighbors are of a specific state, It will change
-            states with different probabilities based on the neighbors. This
-            change leads to a more natural and realistic epidemic spread model.
-          </p>
-          <p class="has-text-dark">
-            The third model introduces two different viruses' fighting to spread
-            and survive and take over as many hosts as possible. As the video
-            shows, the orange virus has dynamics that allow it to spread faster.
-            It would eventually take over the entire model and starve the red
-            virus.
-          </p>
-          <p class="has-text-dark">
-            The fourth and final model determines the dynamics probability rules
-            by taking the 3rd model's dynamics and running a genetic algorithm
-            so that both viruses' can coexist and survive together. As we can
-            see, they have entirely different rules for how they spread, but
-            both can coexist together in the world. They equally consume cells.
-          </p>
-          <p class="has-text-dark">
-            I have included links to the Github Repo and the PDF of the research
-            paper that I wrote with Anas Gauba. Hope you enjoy!
+            The general algorithm is that you start with a number. You divide
+            this number and keep track of the quotient as well as the remainder.
+            The remainder is key as this makes up the digits or symbols used in
+            the nuw bases number. The next step is to re-divide the quotient by
+            the new abse again. you repeat this step keeping the quotient and
+            remainder. the first remainder kept is the least significant bit or
+            number. the last reaminder you get is the most significant bit or
+            digit. The new number is read from Most significant to least
+            significant. Use the application to convert any number you want.
           </p>
         </div>
         <!-- </div> -->
@@ -276,5 +230,11 @@
     </section>
 
     <script src="javascript/navbar.js"></script>
+
+    <!-- load the P5 library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+
+    <!-- My javascript version of my original WaterDrop animation-->
+    <script src="javascript/base-10-conversion/base10Conversion.js"></script>
   </body>
 </html>

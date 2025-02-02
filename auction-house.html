@@ -1,207 +1,268 @@
 <!DOCTYPE html>
 <html data-theme="dark">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PJ87EFWV7Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ87EFWV7Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-PJ87EFWV7Q");
+    </script>
 
-    gtag('config', 'G-PJ87EFWV7Q');
-  </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siri Khalsa's Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <link rel="stylesheet" href="styles/custom.css" />
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Siri Khalsa's Portfolio</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-  <link rel="stylesheet" href="styles/custom.css">
-  <link rel="stylesheet" href="css/mystyles.css">
-
-</head>
-
-<body class="has-navbar-fixed-top">
-
-  <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <embed src="images/logo.svg" width="40" height="40" type="image/svg+xml">
-        </a>
-
-        <a role="button" id="burger" class="navbar-burger as-background-dark burger has-text-primary" aria-label="menu"
-          aria-expanded="false" data-target="navbar-menu-links">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbar-menu-links" class="navbar-menu ">
-        <div class="navbar-end">
-          <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
-            href="index.html">
-            About
+  <body class="has-navbar-fixed-top">
+    <nav
+      class="navbar is-spaced is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <embed
+              src="images/logo.svg"
+              width="40"
+              height="40"
+              type="image/svg+xml"
+            />
           </a>
 
-          <div class="navbar-item has-dropdown is-hoverable ">
+          <a
+            role="button"
+            id="burger"
+            class="navbar-burger as-background-dark burger has-text-primary"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbar-menu-links"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbar-menu-links" class="navbar-menu">
+          <div class="navbar-end">
             <a
-              class="navbar-link is-arrowless is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-black-ter">
-              Projects
+              class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
+              href="index.html"
+            >
+              About
             </a>
 
-            <div class="navbar-dropdown has-background-dark is-right">
-              <a href="waterdrop.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Water Drop Animation
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link is-arrowless is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-black-ter"
+              >
+                Projects
               </a>
-              <a href="simpleworld.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                A Simple World
-              </a>
-              <a href="covid.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Covid-19 Screening ABM
-              </a>
-              <a href="epidemic-spread.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Epidemic Spread & Evolution
-              </a>
-              <a href="cgc.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Cretaceous Gardens Controller
-              </a>
-              <a href="auction-house.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-black-ter">
-                Auction House
-              </a>
-              <a href="mobile-agents.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Mobile Agents
-              </a>
-              <a href="scrabble.html"
-                class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark">
-                Scrabble
-              </a>
+
+              <div class="navbar-dropdown has-background-dark is-right">
+                <a
+                  href="waterdrop.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Water Drop Animation
+                </a>
+                <a
+                  href="simpleworld.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  A Simple World
+                </a>
+                <a
+                  href="base-10-conversion.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Base 10 Conversion
+                </a>
+                <a
+                  href="covid.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Covid-19 Screening ABM
+                </a>
+                <a
+                  href="epidemic-spread.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Epidemic Spread & Evolution
+                </a>
+                <a
+                  href="cgc.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Cretaceous Gardens Controller
+                </a>
+                <a
+                  href="auction-house.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-black-ter"
+                >
+                  Auction House
+                </a>
+                <a
+                  href="mobile-agents.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Mobile Agents
+                </a>
+                <a
+                  href="scrabble.html"
+                  class="navbar-item is-family-secondary has-text-weight-medium is-size-5 has-text-primary has-background-dark"
+                >
+                  Scrabble
+                </a>
+              </div>
             </div>
 
-          </div>
-
-          <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary">
+            <!-- <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary">
                             Algorithms
                         </a> -->
 
-          <a class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
-            href="blog.html">
-            Blog
-          </a>
-
+            <a
+              class="navbar-item is-family-secondary has-text-weight-medium is-size-4 has-text-primary has-background-dark"
+              href="blog.html"
+            >
+              Blog
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="section mt-5">
-    <div class="container ">
-      <figure class="image is-16by9">
-        <iframe class="has-ratio" src="https://player.vimeo.com/video/508693019" width="100%" height="100%"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </figure>
+    <section class="section mt-5">
+      <div class="container">
+        <figure class="image is-16by9">
+          <iframe
+            class="has-ratio"
+            src="https://player.vimeo.com/video/508693019"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- links to stuff -->
+    <section class="section mt-0 pt-0">
+      <div class="container">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
 
-  <!-- links to stuff -->
-  <section class="section mt-0 pt-0">
-    <div class="container">
-      <div class="columns is-mobile is-centered">
-        <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
-
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column">
-          <a class="has-text-dark" href="https://github.com/skhalsa10/auction-house" target="_blank">
-            <div class="box has-background-dark">
-              <i class="fab fa-github fa-2x"></i>
-            </div>
-          </a>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column">
+            <a
+              class="has-text-dark"
+              href="https://github.com/skhalsa10/auction-house"
+              target="_blank"
+            >
+              <div class="box has-background-dark">
+                <i class="fab fa-github fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
         </div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column is-two-fifths-tablet is-two-fifths-desktop"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- written content -->
-  <section class="section has-background-white">
-    <div class="container">
-      <!-- <div class="box has-background-grey-lighter"> -->
-      <div class="content is-large">
-        <p class="title is-2 has-text-dark is-family-secondary has-text-centered has-text-left-mobile">
-          Auction House
-        </p>
-        <p class="subtitle has-text-dark is-family-secondary has-text-centered has-text-left-mobile is-spaced">
-          Language: Java
-        </p>
-        <p class="title is-3 has-text-dark is-family-secondary">
-          Overview
-        </p>
-        <p class="has-text-dark">
-          Auction House was a school project all about networking and the client-server model. The actual project was to
-          build a distributed auction house. There are three main components.
-        </p>
-        <p class="title is-4 has-text-dark is-family-secondary">
-          Bank
-        </p>
-        <p class="has-text-dark">
-          The Bank class is a simple server in this system. It gets started first and listens for clients to request
-          bank accounts. It is vital in brokering sales of items that are bid on. Auction houses will open a bank
-          account with the bank. Agents will open up a bank account with a balance. Either client can connect to the
-          bank, but the bank needs to be running first, or the client will error out. An agent can bid on any items in
-          the Auction House store. The auction house will check with the bank to see if the funds exist and if they do,
-          it will put a hold on the bid amount. If the item is sold, the bank transfers the money out of the Agent's
-          account and into the Auction House's bank account. It performs some other management, but I will let you read
-          the GitHub readme to learn more and run the system.
-        </p>
-        <p class="title is-4 has-text-dark is-family-secondary">
-          Auction-House
-        </p>
-        <p class="has-text-dark">
-          The Auction House class acts as both a server and a client. It is a server to the Agent class, and it is a
-          client to the Bank class. It will maintain a list of randomly generated items to be sold. It provides this
-          list to clients who can request to bid on an item. It uses the bank to check for available funds and to lock
-          them until the item is won. It will release the lock if the Agent gets outbid.
-        </p>
-        <p class="title is-4 has-text-dark is-family-secondary">
-          Agent
-        </p>
-        <p class="has-text-dark">
-          The agent class is simple. It opens up a bank account and connects to all the auction houses. It browses the
-          items using a GUI and makes bids on the items in hopes of winning them.
-        </p>
-        <p class="title is-4 has-text-dark is-family-secondary">
-          Final Thoughts
-        </p>
-        <p class="has-text-dark">
-          This project was enjoyable! I think the most challenging part was working in a team. It is hit or miss if you
-          get a reliable partner in a school setting. We learned how to use sockets for communication, but we were never
-          taught how to use our application over the internet and not just a LAN. We were able to figure out how to
-          perform port forwarding to test this with all the partners. It was magical and memorable!
-        </p>
+    <!-- written content -->
+    <section class="section has-background-white">
+      <div class="container">
+        <!-- <div class="box has-background-grey-lighter"> -->
+        <div class="content is-large">
+          <p
+            class="title is-2 has-text-dark is-family-secondary has-text-centered has-text-left-mobile"
+          >
+            Auction House
+          </p>
+          <p
+            class="subtitle has-text-dark is-family-secondary has-text-centered has-text-left-mobile is-spaced"
+          >
+            Language: Java
+          </p>
+          <p class="title is-3 has-text-dark is-family-secondary">Overview</p>
+          <p class="has-text-dark">
+            Auction House was a school project all about networking and the
+            client-server model. The actual project was to build a distributed
+            auction house. There are three main components.
+          </p>
+          <p class="title is-4 has-text-dark is-family-secondary">Bank</p>
+          <p class="has-text-dark">
+            The Bank class is a simple server in this system. It gets started
+            first and listens for clients to request bank accounts. It is vital
+            in brokering sales of items that are bid on. Auction houses will
+            open a bank account with the bank. Agents will open up a bank
+            account with a balance. Either client can connect to the bank, but
+            the bank needs to be running first, or the client will error out. An
+            agent can bid on any items in the Auction House store. The auction
+            house will check with the bank to see if the funds exist and if they
+            do, it will put a hold on the bid amount. If the item is sold, the
+            bank transfers the money out of the Agent's account and into the
+            Auction House's bank account. It performs some other management, but
+            I will let you read the GitHub readme to learn more and run the
+            system.
+          </p>
+          <p class="title is-4 has-text-dark is-family-secondary">
+            Auction-House
+          </p>
+          <p class="has-text-dark">
+            The Auction House class acts as both a server and a client. It is a
+            server to the Agent class, and it is a client to the Bank class. It
+            will maintain a list of randomly generated items to be sold. It
+            provides this list to clients who can request to bid on an item. It
+            uses the bank to check for available funds and to lock them until
+            the item is won. It will release the lock if the Agent gets outbid.
+          </p>
+          <p class="title is-4 has-text-dark is-family-secondary">Agent</p>
+          <p class="has-text-dark">
+            The agent class is simple. It opens up a bank account and connects
+            to all the auction houses. It browses the items using a GUI and
+            makes bids on the items in hopes of winning them.
+          </p>
+          <p class="title is-4 has-text-dark is-family-secondary">
+            Final Thoughts
+          </p>
+          <p class="has-text-dark">
+            This project was enjoyable! I think the most challenging part was
+            working in a team. It is hit or miss if you get a reliable partner
+            in a school setting. We learned how to use sockets for
+            communication, but we were never taught how to use our application
+            over the internet and not just a LAN. We were able to figure out how
+            to perform port forwarding to test this with all the partners. It
+            was magical and memorable!
+          </p>
+        </div>
+        <!-- </div> -->
       </div>
-      <!-- </div> -->
+    </section>
 
-    </div>
-  </section>
-
-
-  <script src="javascript/navbar.js"></script>
-
-</body>
-
+    <script src="javascript/navbar.js"></script>
+  </body>
 </html>
