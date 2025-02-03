@@ -105,7 +105,7 @@
   --bulma-light-s: 0%;
   --bulma-light-l: 93%;
   --bulma-light-invert-l: 24.9019607843%;
-  --bulma-light-invert: #423D3D;
+  --bulma-light-invert: #423d3d;
   --bulma-light-on-scheme-l: 32.9411764706%;
   --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
   --bulma-dark: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
@@ -115,7 +115,7 @@
   --bulma-dark-s: 4%;
   --bulma-dark-l: 25%;
   --bulma-dark-invert-l: 92.9411764706%;
-  --bulma-dark-invert: #EDEDED;
+  --bulma-dark-invert: #ededed;
   --bulma-dark-on-scheme-l: 24.9019607843%;
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
   --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
@@ -1006,7 +1006,7 @@
     --bulma-light-s: 0%;
     --bulma-light-l: 93%;
     --bulma-light-invert-l: 24.9019607843%;
-    --bulma-light-invert: #423D3D;
+    --bulma-light-invert: #423d3d;
     --bulma-light-on-scheme-l: 32.9411764706%;
     --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
     --bulma-dark: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
@@ -1016,7 +1016,7 @@
     --bulma-dark-s: 4%;
     --bulma-dark-l: 25%;
     --bulma-dark-invert-l: 92.9411764706%;
-    --bulma-dark-invert: #EDEDED;
+    --bulma-dark-invert: #ededed;
     --bulma-dark-on-scheme-l: 24.9019607843%;
     --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
     --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
@@ -1924,7 +1924,7 @@
   --bulma-light-s: 0%;
   --bulma-light-l: 93%;
   --bulma-light-invert-l: 24.9019607843%;
-  --bulma-light-invert: #423D3D;
+  --bulma-light-invert: #423d3d;
   --bulma-light-on-scheme-l: 32.9411764706%;
   --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
   --bulma-dark: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
@@ -1934,7 +1934,7 @@
   --bulma-dark-s: 4%;
   --bulma-dark-l: 25%;
   --bulma-dark-invert-l: 92.9411764706%;
-  --bulma-dark-invert: #EDEDED;
+  --bulma-dark-invert: #ededed;
   --bulma-dark-on-scheme-l: 24.9019607843%;
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
   --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
@@ -2899,7 +2899,7 @@ th:not([align]) {
 }
 
 :root {
-  --bulma-body-background-color: #EDEDED;
+  --bulma-body-background-color: #ededed;
   --bulma-body-size: 1em;
   --bulma-body-min-width: 300px;
   --bulma-body-rendering: optimizeLegibility;
@@ -7151,7 +7151,7 @@ button.dropdown-item.is-selected {
   --bulma-navbar-h: var(--bulma-scheme-h);
   --bulma-navbar-s: var(--bulma-scheme-s);
   --bulma-navbar-l: var(--bulma-scheme-main-l);
-  --bulma-navbar-background-color: #423D3D;
+  --bulma-navbar-background-color: #423d3d;
   --bulma-navbar-box-shadow-size: 0 0.125em 0 0;
   --bulma-navbar-box-shadow-color: var(--bulma-background);
   --bulma-navbar-padding-vertical: 1rem;
@@ -21546,6 +21546,20 @@ has-background-danger.is-hoverable:active {
 .is-clickable {
   cursor: pointer !important;
   pointer-events: all !important;
+}
+
+#base-10-conversion-fig {
+  width: 100%; /* Make it take full width */
+  min-height: 300px; /* Ensure initial height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#base-10-conversion {
+  width: 100%; /* Make it scale dynamically */
+  height: auto;
+  min-height: 300px; /* Ensure an initial height */
 }
 
 /*# sourceMappingURL=mystyles.css.map */

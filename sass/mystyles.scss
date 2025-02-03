@@ -1,31 +1,46 @@
 @charset "utf-8";
 
 $light-orange: #f25733;
-$blue: #3498DB;
-$dark-primary: #423D3D;
-$light-grey: #EDEDED;
+$blue: #3498db;
+$dark-primary: #423d3d;
+$light-grey: #ededed;
 
-$green: #88C08C;
-$yellow: #FFAA33;
-$red: #D32F2F;
-$fira-sans: 'Fira Sans', sans-serif;
-$quicksand: 'Quicksand', sans-serif;
+$green: #88c08c;
+$yellow: #ffaa33;
+$red: #d32f2f;
+$fira-sans: "Fira Sans", sans-serif;
+$quicksand: "Quicksand", sans-serif;
 
 // Use Bulma with custom variables
-@use "bulma/sass" with ($family-primary: $fira-sans,
-    $family-secondary: $quicksand,
-    $body-background-color: $light-grey,
-    $light: $light-grey,
-    $dark: $dark-primary,
-    $navbar-height: 5rem,
-    $text: $dark-primary,
-    $primary: $light-orange,
-    $link: $blue,
-    $success: $green,
-    $warning: $yellow,
-    $danger: $red,
-    $navbar-background-color: $dark-primary,
+@use "bulma/sass" with (
+  $family-primary: $fira-sans,
+  $family-secondary: $quicksand,
+  $body-background-color: $light-grey,
+  $light: $light-grey,
+  $dark: $dark-primary,
+  $navbar-height: 5rem,
+  $text: $dark-primary,
+  $primary: $light-orange,
+  $link: $blue,
+  $success: $green,
+  $warning: $yellow,
+  $danger: $red,
+  $navbar-background-color: $dark-primary
 );
 
 // Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand:wght@500&display=swap");
+
+#base-10-conversion-fig {
+  width: 100%; /* Make it take full width */
+  min-height: 300px; /* Ensure initial height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#base-10-conversion {
+  width: 100%; /* Make it scale dynamically */
+  height: auto;
+  min-height: 300px; /* Ensure an initial height */
+}

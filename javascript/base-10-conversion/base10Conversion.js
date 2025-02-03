@@ -79,7 +79,7 @@ function setup() {
   //make base 10 input field div
   base10InputDiv = createDiv();
   base10InputDiv.parent("#canvas-controls");
-  base10InputDiv.addClass("feild");
+  base10InputDiv.addClass("feildmt-1 mb-1");
   //create the label
   base10InputLabel = createElement("label", "Enter a number:");
   base10InputLabel.addClass("label has-text-dark");
@@ -95,7 +95,7 @@ function setup() {
   //make field div
   newBaseInputDiv = createDiv();
   newBaseInputDiv.parent("#canvas-controls");
-  newBaseInputDiv.addClass("feild");
+  newBaseInputDiv.addClass("feild mt-1 mb-1");
   //make the label
   newBaseLabel = createElement("label", "Enter a new base:");
   newBaseLabel.addClass("label has-text-dark");
@@ -111,7 +111,7 @@ function setup() {
 
   //create the button
   let convertButtonField = createDiv();
-  convertButtonField.addClass("field");
+  convertButtonField.addClass("field mt-1 mb-1");
   convertButtonField.parent("#canvas-controls");
   let convertButtonControl = createDiv();
   convertButtonControl.addClass("control");
@@ -120,6 +120,7 @@ function setup() {
   convertButton.parent(convertButtonControl);
   convertButton.addClass("button is-link");
   convertButton.mouseClicked(convertNumber);
+  //create the result div
   resultDiv = createDiv();
   resultDiv.addClass("field");
   resultDiv.parent("#canvas-controls");
@@ -127,31 +128,12 @@ function setup() {
   resultLabel.parent(resultDiv);
   resultTextBox = createSpan(result);
   resultTextBox.parent(resultDiv);
+
+  //create the canvas
   canvas = createCanvas(width, height);
   canvas.parent("#base-10-conversion");
   canvas.id("base-10-canvas");
-  startFontSize = floor(height / CANVAS_FONT_RATIO);
-  currentFontSize = startFontSize;
-  targetFontSize = startFontSize;
-  targetFontSize = calculateTargetFont(width, targetFontSize, false);
-  lerpRate = targetFontSize / startFontSize;
-  x = width / 2;
-  y = height / 2;
-
-  // Set target positions for the final display
-  textSize(targetFontSize);
-  let currentX = 20;
-  positions.currentNumber = { x: currentX, y: 40 };
-  currentX += TEXT_SPACER;
-  currentX += ceil(textWidth(CURRENT_NUMBER_TEXT));
-  positions.divSymbol = { x: currentX, y: 40 };
-  currentX += TEXT_SPACER;
-  currentX += ceil(textWidth(DIVIDE_SYMBOL));
-  positions.newBase = { x: currentX, y: 40 };
-  currentX += TEXT_SPACER;
-  currentX += ceil(textWidth(NEW_BASE));
-  positions.remainder = { x: currentX, y: 40 };
-  textSize(currentFontSize);
+  updateFontSizeAndTextPosition();
 }
 
 function draw() {
@@ -396,6 +378,31 @@ function draw() {
   }
 }
 
+function updateFontSizeAndTextPosition() {
+  startFontSize = floor(height / CANVAS_FONT_RATIO);
+  currentFontSize = startFontSize;
+  targetFontSize = startFontSize;
+  targetFontSize = calculateTargetFont(width, targetFontSize, false);
+  lerpRate = targetFontSize / startFontSize;
+  x = width / 2;
+  y = height / 2;
+
+  // Set target positions for the final display
+  textSize(targetFontSize);
+  let currentX = 20;
+  positions.currentNumber = { x: currentX, y: 40 };
+  currentX += TEXT_SPACER;
+  currentX += ceil(textWidth(CURRENT_NUMBER_TEXT));
+  positions.divSymbol = { x: currentX, y: 40 };
+  currentX += TEXT_SPACER;
+  currentX += ceil(textWidth(DIVIDE_SYMBOL));
+  positions.newBase = { x: currentX, y: 40 };
+  currentX += TEXT_SPACER;
+  currentX += ceil(textWidth(NEW_BASE));
+  positions.remainder = { x: currentX, y: 40 };
+  textSize(currentFontSize);
+}
+
 function calculateTargetFont(width, fontSize, isForResult) {
   let widthUsed;
   if (isForResult) {
@@ -448,4 +455,10 @@ function convertNumber() {
     newBaseInput.attribute("disabled", "");
     userInputStage = false;
   }
+}
+
+function windowResized() {
+  width = select("#base-10-conversion-fig").size().width;
+  resizeCanvas(width, height);
+  updateFontSizeAndTextPosition();
 }
