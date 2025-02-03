@@ -79,7 +79,7 @@ function setup() {
   //make base 10 input field div
   base10InputDiv = createDiv();
   base10InputDiv.parent("#canvas-controls");
-  base10InputDiv.addClass("feildmt-1 mb-1");
+  base10InputDiv.addClass("feild mt-1 mb-1");
   //create the label
   base10InputLabel = createElement("label", "Enter a number:");
   base10InputLabel.addClass("label has-text-dark");

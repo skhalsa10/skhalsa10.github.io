@@ -21551,7 +21551,6 @@ has-background-danger.is-hoverable:active {
 #base-10-conversion-fig {
   width: 100%; /* Make it take full width */
   min-height: 300px; /* Ensure initial height */
-  display: flex;
   justify-content: center;
   align-items: center;
 }
