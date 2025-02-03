@@ -31,14 +31,14 @@ $quicksand: "Quicksand", sans-serif;
 // Import Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand:wght@500&display=swap");
 
-#base-10-conversion-fig {
+.dynamic-size-canvas-container {
   width: 100%; /* Make it take full width */
   min-height: 300px; /* Ensure initial height */
   justify-content: center;
   align-items: center;
 }
 
-#base-10-conversion {
+.dynamic-height-canvas {
   width: 100%; /* Make it scale dynamically */
   height: auto;
   min-height: 300px; /* Ensure an initial height */

@@ -21548,14 +21548,14 @@ has-background-danger.is-hoverable:active {
   pointer-events: all !important;
 }
 
-#base-10-conversion-fig {
+.dynamic-size-canvas-container {
   width: 100%; /* Make it take full width */
   min-height: 300px; /* Ensure initial height */
   justify-content: center;
   align-items: center;
 }
 
-#base-10-conversion {
+.dynamic-height-canvas {
   width: 100%; /* Make it scale dynamically */
   height: auto;
   min-height: 300px; /* Ensure an initial height */
