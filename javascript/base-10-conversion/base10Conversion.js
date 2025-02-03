@@ -71,7 +71,21 @@ const symbolMap = {
   35: "Z",
 };
 
-function setup() {
+function preload() {
+  return new Promise((resolve) => {
+    if (
+      document.readyState === "complete" ||
+      document.readyState === "interactive"
+    ) {
+      resolve();
+    } else {
+      document.addEventListener("DOMContentLoaded", resolve);
+    }
+  });
+}
+
+async function setup() {
+  await preload();
   width = select("#base-10-conversion-fig").size().width;
   height = select("#base-10-conversion-fig").size().height;
 
